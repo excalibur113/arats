@@ -142,7 +142,6 @@ input{
 }
 
 .input-field i{
-  margin-left: 15px;
   color: #999;
 }
 
@@ -172,18 +171,12 @@ form p a{
   cursor: pointer;
   transition: background 1s;
 }
-
 .input-group{
   height: 280px;
 }
 
 .btn-field button.disable{
   color: #ffffff;
-}
-
-small{
-  color: #e87c03;
-  font-size: 10px;
 }
 
 label[for="rememberMe"] {
