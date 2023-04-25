@@ -1,0 +1,308 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 80px;
+  padding: 0 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color:#FFCCA7;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.search{
+  height: 30px;
+  background-color:#FFCCA7;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons a {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  color: #555;
+  font-size: 24px;
+}
+
+.icons a:hover {
+  color: #000;
+}
+
+.search-icon i {
+  transition: transform 0.2s ease-in-out;
+}
+
+.search-icon:hover i {
+  transform: scale(1.2);
+}
+
+.account-icon i {
+  font-size: 30px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #333;
+  font-size: 18px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.blog-sec h2{
+  text-align: center;
+  margin: 50px 0px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.showcase-content {
+  position: relative;
+  z-index: 2;
+  width: 90%; /* Increased width for more space */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0px 40px 0px; /* Adjusted margin for centering */
+}
+.btns{
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card:hover .card-body {
+  transform: translateY(-50%);
+}
+
+.card-img-top {
+  transition: all 0.3s ease;
+  object-fit: cover; /* updated */
+  height: 200px; /* added */
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+}
+
+.card-title,
+.card-text {
+  margin: 0;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+@media  (max-width: 320px) {
+  /* Modify header styles for small screens */
+  header {
+    height: 60px;
+    padding: 0 10px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .icons a {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .search {
+    height: 20px;
+  }
+  
+  /* Modify content styles for small screens */
+  .content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}
+@media (min-width: 600px) {
+  body {
+    padding: 60px 10px;
+  }
+}
+h1 {
+  margin: 0;
+  font-family: 'Bree Serif', serif;
+  font-size: 36px;
+}
+p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  background: #e5e5e5;
+  box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
+}
+.input {
+  position: absolute;
+  opacity: 0;
+}
+.label {
+  width: 100%;
+  padding: 20px 30px;
+  background: #e5e5e5;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  color: #7f7f7f;
+  transition: background 0.1s, color 0.1s;
+}
+.label:hover {
+  background: #d8d8d8;
+}
+.label:active {
+  background: #ccc;
+}
+.input:focus + .label {
+  z-index: 1;
+}
+.input:checked + .label {
+  background: #fff;
+  color: #000;
+}
+
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #4517c2;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: rgb(8, 7, 7);
+  display: none;
+  padding: 80px 20px;
+  height: 100%;
+}
